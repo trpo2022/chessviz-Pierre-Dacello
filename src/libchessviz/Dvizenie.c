@@ -2,7 +2,7 @@
 #include <string.h>
 #include "funcktion.h"
 
-extern char doska[8][8];
+char doska[8][8];
 
 int Dvizenie(int x_start, int x_end, int y_start, int y_end, int hod, int kod_sbros)
 {
