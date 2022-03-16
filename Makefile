@@ -5,7 +5,7 @@ LIBSOURCE=src/libchessviz/
 INCLUDEPATH=-I src
 all: chessviz clean
 chessviz: main.o libchessviz.a
-	gcc -o chessviz main.o libchessviz.a 
+	$(CC) -o chessviz main.o libchessviz.a 
 libchessviz.a: Dvizenie.o Fill_doska_in_begin.o Proverka_vvedennogo.o Vivod_doski.o Vzatie.o
 	ar rcs libchessviz.a Dvizenie.o Fill_doska_in_begin.o Proverka_vvedennogo.o Vivod_doski.o Vzatie.o
 main.o: 
