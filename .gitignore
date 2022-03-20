@@ -3,3 +3,5 @@
 *.out
 *main
 *chessviz
+*.o
+*.a
